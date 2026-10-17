@@ -10,14 +10,19 @@
     <main class="shell">
       <header class="hud">
         <p class="brand">NO SIGNAL</p>
-        <p class="hint">Space / click to jump · Down to duck</p>
+        <p class="hint">Space / click to jump · Hold jump to fly with a jetpack</p>
         <p class="scores">
+          <span class="coins">● <span id="coins">00000</span></span>
           HI <span id="hi-score">00000</span>
           <span id="score">00000</span>
         </p>
       </header>
       <canvas id="game" width="900" height="280" tabindex="0" aria-label="Endless runner game"></canvas>
       <p id="status" class="status">Press Space to start</p>
+      <section class="shop">
+        <button id="buy-jetpack" type="button">Buy Jetpack · 100 ●</button>
+        <p id="jet-owned" class="owned">Owned: 0 · 1 run each</p>
+      </section>
     </main>
     <script src="game.js"></script>
   </body>
