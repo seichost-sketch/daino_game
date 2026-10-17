@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No Signal Runner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hud">
+        <p class="brand">NO SIGNAL</p>
+        <p class="hint">Space / click to jump · Down to duck</p>
+        <p class="scores">
+          HI <span id="hi-score">00000</span>
+          <span id="score">00000</span>
+        </p>
+      </header>
+      <canvas id="game" width="900" height="280" tabindex="0" aria-label="Endless runner game"></canvas>
+      <p id="status" class="status">Press Space to start</p>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
